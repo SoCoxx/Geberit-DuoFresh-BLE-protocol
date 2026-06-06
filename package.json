@@ -1,0 +1,20 @@
+{
+  "name": "geberit-duofresh-ble",
+  "version": "1.0.0",
+  "description": "BLE control tool for Geberit DuoFresh (RS8.0 TS107)",
+  "type": "module",
+  "main": "geberit-secure.mjs",
+  "scripts": {
+    "scan":  "node geberit-secure.mjs --scan",
+    "get":   "node geberit-secure.mjs --get",
+    "dump":  "node geberit-secure.mjs --dump",
+    "write": "node geberit-secure.mjs --write"
+  },
+  "dependencies": {
+    "node-ble": "^1.10.1",
+    "dbus-next": "^0.10.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
